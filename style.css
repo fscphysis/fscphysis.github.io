@@ -1,0 +1,292 @@
+/* style.css */
+
+/* Reset básico e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de cores */
+:root {
+    --white-gray: #fafafa;
+    --black-gray: #222222;
+    --light-gray: #e0e0e0;
+    --medium-gray: #888888;
+}
+
+/* Tamanho base para todos os cálculos em rem */
+html {
+    font-size: 14px; /* 1rem = 16px */
+}
+
+/* Estilos do corpo - Base tipográfica */
+body {
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.125rem; /* 18px - Proporção 9:8 em relação à base */
+    line-height: 1.6;
+    color: var(--black-gray);
+    background-color: var(--white-gray);
+    font-weight: 400;
+}
+
+/* Container principal */
+.container {
+    max-width: 50rem; /* 800px */
+    margin: 0 auto;
+    padding: 0 1.25rem; /* 20px */
+}
+
+/* Cabeçalho e menu de navegação */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--white-gray);
+    border-bottom: 0.0625rem solid var(--light-gray); /* 1px */
+    z-index: 100;
+    padding: 0.625rem 0 0 0; /* 10px */
+    margin-bottom: 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 2.5rem; /* 40px */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--black-gray);
+    font-size: 1.25rem; /* 20px - Proporção 5:4 em relação à base */
+    font-weight: normal;
+    letter-spacing: 0.03125rem; /* 0.5px */
+    padding: 0.3125rem 0; /* 5px */
+    transition: color 0.2s ease;
+}
+
+/* Efeito de sublinhado ao passar o mouse */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.0625rem; /* 1px */
+    background-color: var(--black-gray);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Conteúdo principal */
+.main-content {
+    padding: 2.5rem 0; /* 40px */
+}
+
+/* Seções */
+.section {
+    margin: 0 auto 3.75rem; /* 60px */
+    padding-bottom: 2.5rem; /* 40px */
+    border-bottom: 0.0625rem solid var(--light-gray); /* 1px */
+}
+
+.section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Hierarquia tipográfica com proporções harmônicas */
+/* Base: 1.125rem (18px) */
+/* Proporção entre níveis: 1.25 (5:4) */
+
+h1 {
+    /* h1 = 1.125rem × 1.25³ = 2.197rem ≈ 2.2rem */
+    font-size: 2.2rem; /* 35.2px - 2x o corpo + margem */
+    line-height: 1.2;
+    margin-bottom: 0.9375rem; /* 15px */
+    font-weight: 700;
+    letter-spacing: -0.03125rem; /* -0.5px */
+}
+
+.section > h1 {
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+h2 {
+    /* h2 = 1.125rem × 1.25² = 1.758rem ≈ 1.75rem */
+    font-size: 1.75rem; /* 28px - 1.55x o corpo */
+    margin: 2.5rem 0 1.25rem; /* 40px 0 20px */
+    font-weight: 700;
+}
+
+h3 {
+    /* h3 = 1.125rem × 1.25 = 1.406rem ≈ 1.4rem */
+    font-size: 1.4rem; /* 22.4px - 1.24x o corpo */
+    margin: 1.875rem 0 0.9375rem; /* 30px 0 15px */
+    font-weight: 700;
+}
+
+h4 {
+    /* h4 = 1.125rem × 1.125 = 1.266rem ≈ 1.27rem */
+    font-size: 1.27rem; /* 20.32px - 1.13x o corpo */
+    margin: 1.25rem 0 0.625rem; /* 20px 0 10px */
+    font-weight: 700;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 1.5625rem; /* 25px */
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Listas */
+ul {
+    margin-left: 1.25rem; /* 20px */
+    margin-bottom: 1.5625rem; /* 25px */
+}
+
+li {
+    margin-bottom: 0.625rem; /* 10px */
+    line-height: 1.5;
+}
+
+/* Citações */
+blockquote {
+    font-style: italic;
+    border-left: 0.1875rem solid var(--medium-gray); /* 3px */
+    padding-left: 1.25rem; /* 20px */
+    margin: 1.875rem 0 1.875rem 1.25rem; /* 30px 0 30px 20px */
+    color: var(--black-gray);
+}
+
+/* Rodapé */
+.page-footer {
+    text-align: center;
+    padding: 2.5rem 0; /* 40px */
+    color: var(--medium-gray);
+    font-size: 0.9rem; /* 14.4px */
+    border-top: 0.0625rem solid var(--light-gray); /* 1px */
+    margin-top: 2.5rem; /* 40px */
+}
+
+.footer-text {
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem; /* 16px */
+    }
+    
+    /* Ajuste proporcional dos títulos */
+    h1 {
+        font-size: 2rem; /* 32px - 2x o corpo */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* 24px - 1.5x o corpo */
+    }
+    
+    h3 {
+        font-size: 1.25rem; /* 20px - 1.25x o corpo */
+    }
+    
+    h4 {
+        font-size: 1.125rem; /* 18px - 1.125x o corpo */
+    }
+    
+    .container {
+        padding: 0 0.9375rem; /* 15px */
+    }
+    
+    .nav-list {
+        gap: 1.5625rem; /* 25px */
+    }
+    
+    .nav-link {
+        font-size: 1.125rem; /* 18px */
+    }
+    
+    .main-content {
+        padding-top: 1.875rem; /* 30px */
+    }
+    
+    .section {
+        margin-bottom: 3.125rem; /* 50px */
+        padding-bottom: 1.875rem; /* 30px */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9375rem; /* 15px */
+    }
+    
+    /* Ajuste proporcional dos títulos */
+    h1 {
+        font-size: 1.8rem; /* 27px - 1.8x o corpo */
+        margin-bottom: 0.8333rem; /* 12.5px */
+    }
+    
+    h2 {
+        font-size: 1.35rem; /* 20.25px - 1.35x o corpo */
+        margin: 1.875rem 0 0.9375rem; /* 30px 0 15px */
+    }
+    
+    h3 {
+        font-size: 1.125rem; /* 16.875px - 1.125x o corpo */
+        margin: 1.5rem 0 0.75rem; /* 24px 0 12px */
+    }
+    
+    h4 {
+        font-size: 1rem; /* 15px - igual ao corpo */
+        margin: 1.25rem 0 0.625rem; /* 20px 0 10px */
+    }
+    
+    .container {
+        padding: 0 0.625rem; /* 10px */
+    }
+    
+    .nav-list {
+        gap: 0.9375rem; /* 15px */
+    }
+    
+    .nav-link {
+        font-size: 1rem; /* 16px */
+    }
+    
+    .main-content {
+        padding-top: 1.25rem; /* 20px */
+    }
+    
+    .section {
+        margin-bottom: 2.5rem; /* 40px */
+        padding-bottom: 1.5625rem; /* 25px */
+    }
+    
+    .page-footer {
+        margin-top: 1.875rem; /* 30px */
+        padding: 1.875rem 0; /* 30px */
+    }
+    
+    p {
+        margin-bottom: 1.25rem; /* 20px */
+    }
+}
