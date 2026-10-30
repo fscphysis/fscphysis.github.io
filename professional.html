@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapere Aude</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Favicon-->
-    <link rel="icon" href="favicon.png" type="image/png">
+
+    <title>Profissional</title>
+
+    <!-- Antecipa o carregamento das fontes usadas no layout -->
+    <link
+        rel="preload"
+        href="./fontes/libre-baskerville-v24-latin-regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    >
+
+    <link
+        rel="preload"
+        href="./fontes/libre-baskerville-v24-latin-700.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    >
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.png" type="image/png">
 </head>
 <body>
     <div class="container">
@@ -16,9 +32,9 @@
         <header class="header">
             <nav class="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Abstract</a></li>
+                    <li class="nav-item"><a href="index.html"        class="nav-link">Abstract</a></li>
                     <li class="nav-item"><a href="professional.html" class="nav-link">Profissional</a></li>
-                    <li class="nav-item"><a href="academic.html" class="nav-link">Acadêmico</a></li>
+                    <li class="nav-item"><a href="academic.html"     class="nav-link">Acadêmico</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,17 +47,33 @@
                 
                 <section>
                     <h3>Infraestrutura de Dados & Computação em Nuvem</h3>
-                    <p>Arquitetura e operação de sistemas de dados orientados por princípios de escalabilidade elástica e custo-efetividade. A implementação abrange desde a definição da topologia de rede (VPC/VNet) e estratégias de armazenamento em nuvem (AWS, Azure) até a construção de pipelines de dados resilientes e a modelagem de repositórios dimensionais. O resultado é uma base técnica que desloca o esforço operacional da manutenção de infraestrutura para a geração de insight.</p>
+                    <p>
+                        Arquitetura e operação de sistemas de dados orientados por princípios de escalabilidade e custo-efetividade. A implementação abrange desde a definição da topologia de rede (VPC/VNet) e estratégias de armazenamento em nuvem (AWS, Azure) até a construção de pipelines de dados resilientes. 
+                        
+                        O resultado é uma base técnica que desloca o esforço operacional da manutenção de infraestrutura, reduz custos no longo prazo favorece o desenvolvimento continuo. Decisões lógicas são a base estrutural para sistemas anti-frageis.
+                    </p>
                 </section>
 
                 <section>
                     <h3>Gestão de Processos</h3>
-                    <p>Estruturação da complexidade operacional em sistemas executáveis. A abordagem aplica modelagem formal de processos e técnicas de gestão do conhecimento para decompor fluxos de trabalho em componentes lógicos discretos e documentar ativos intelectuais. Esta sistematização converte o capital procedural em arquitetura replicável, fornecendo a base necessária para automação, auditoria e otimização contínua.</p>
+                    <p>
+                        Estruturação da complexidade operacional em sistemas executáveis e auditáveis. A abordagem aplica modelagem formal de processos (BPM, BPMN) e técnicas de gestão do conhecimento (ontologias de alto nivel) para decompor fluxos de trabalho em componentes lógicos discretos e documentar ativos intelectuais. 
+                        
+                        Esta sistematização converte o capital procedural em arquitetura replicável, fornecendo a base necessária para automação, auditoria e otimização contínua. A orientação por processos permite decisões administrativas conscientes e estratégicas.
+                    </p>
                 </section>
 
                 <section>
                     <h3>Negócios & Finanças</h3>
-                    <p>Formulação de estruturas analíticas que vinculam operações ao desempenho financeiro. A metodologia integra dados transacionais, restrições de recursos e contexto regulatório sob modelos microeconômicos de custo, valor e risco. O output são modelos quantitativos e frameworks de governança que convertem decisões estratégicas em parâmetros operacionais e critérios de alocação de capital.</p>
+                    <p>
+                        Estruturação dos processos financeiros, do design à gestão de recursos. A metodologia integra estruturação de dados, modelos de gestão e governança sob princípios de solidez, previsibilidade e sobrevivência de longo prazo. 
+
+                        O método constrói fechamentos automatizados, evidencia e classifica custos de operação, converte em gestão racional.  
+                                                
+                        A estrutura parte de partidas dobradas, conciliação e visão integrada de resultado, caixa e risco. Resiliência como propriedade estrutural, não como resposta reativa.
+
+
+                    </p>
                 </section>
                 
                 <section>
@@ -49,46 +81,58 @@
                     
                     <h3>Estatística Descritiva e Inferencial</h3>
                     
-                    <h4>Análise Descritiva</h4>
+                    <b>Análise Descritiva</b>
                     <p>Sumarização de dados através de medidas de tendência central (média, mediana, moda), dispersão (variância, desvio padrão, amplitude interquartil) e forma (assimetria, curtose). Análise exploratória com visualização (histogramas, boxplots, gráficos de densidade).</p>
                     
-                    <h4>Distribuições de Probabilidade</h4>
+                    <b>Distribuições de Probabilidade</b>
                     <p>Conhecimento das distribuições discretas (Binomial, Poisson) e contínuas (Normal, t-Student, Qui-quadrado, F), incluindo suas propriedades e aplicações.</p>
                     
-                    <h4>Testes de Hipótese</h4>
+                    <b>Testes de Hipótese</b>
                     <p>Aplicação de testes paramétricos (t-teste, ANOVA, teste F) e não paramétricos (Mann-Whitney, Kruskal-Wallis) para comparação de grupos e amostras.</p>
                     
-                    <h4>Intervalos de Confiança</h4>
+                    <b>Intervalos de Confiança</b>
                     <p>Cálculo e interpretação de intervalos para parâmetros populacionais (média, proporção).</p>
                     
-                    <h4>Análise de Correlação e Regressão</h4>
+                    <b>Análise de Correlação e Regressão</b>
                     <p>Medidas de associação (Pearson, Spearman), ajuste e diagnóstico de modelos de regressão linear.</p>
                     
                     <h3>Modelagem Estatística e Machine Learning</h3>
                     
-                    <h4>Modelos Lineares Generalizados (GLM)</h4>
+                    <b>Modelos Lineares Generalizados (GLM)</b>
                     <p>Extensão da regressão linear para respostas não normais (regressão logística, Poisson).</p>
                     
-                    <h4>Métodos de Reamostragem</h4>
+                    <b>Métodos de Reamostragem</b>
                     <p>Validação cruzada (k-fold, leave-one-out) e bootstrap para estimativa de erro e seleção de modelos.</p>
                     
-                    <h4>Regularização</h4>
+                    <b>Regularização</b>
                     <p>Técnicas de penalização (Ridge, Lasso, Elastic Net) para prevenção de sobreajuste.</p>
                     
-                    <h4>Algoritmos de Aprendizado Supervisionado</h4>
+                    <b>Algoritmos de Aprendizado Supervisionado</b>
                     <p>Modelos Lineares, K-Nearest Neighbors (KNN), Naive Bayes, Árvores de Decisão, Métodos de Ensemble (Bagging, Boosting), Máquinas de Vetor de Suporte (SVM).</p>
                     
-                    <h4>Aprendizado Não Supervisionado</h4>
+                    <b>Aprendizado Não Supervisionado</b>
                     <p>Redução de Dimensionalidade (PCA), Agrupamento (Clustering), Sistemas de Recomendação.</p>
                     
-                    <h4>Validação e Avaliação de Modelos</h4>
+                    <b>Validação e Avaliação de Modelos</b>
                     <p>Matriz de confusão, métricas de classificação e regressão, técnicas de normalização e padronização.</p>
                 </section>
                 
                 <section>
                     <h2>Conhecimentos Técnicos</h2>
                     <ul>
-                        <li><strong>Linguagens:</strong> C/C++, Python, R</li>
-                        <li><strong>Cloud Computing:</strong> AWS (IAM, S3, RDS, VPC), Azure (Active Directory, Blob Storage, PostgreSQL, VNet)</li>
-                        <li><strong>Bancos de Dados:</strong> PostgreSQL, MySQL, SQLite, Modelagem Dimensional</li>
-                        <li><strong>DevOps & Ferramentas:</strong> Terraform, Docker, Git, FastAPI</li>
+                        <li><b>Linguagens:</b>           C/C++, Python, R</li>
+                        <li><b>Cloud Computing:</b>      AWS (IAM, S3, RDS, VPC), Azure (Active Directory, Blob Storage, PostgreSQL, VNet)</li>
+                        <li><b>Bancos de Dados:</b>      PostgreSQL, MySQL, SQLite, Modelagem Dimensional</li>
+                        <li><b>DevOps & Ferramentas:</b> Terraform, Docker, Git, FastAPI</li>
+
+                </section>
+            </section>
+        </main>
+        
+        <!-- Rodapé -->
+        <footer class="page-footer">
+            <p class="footer-text">Sapere Aude</p>
+        </footer>
+    </div>
+</body>
+</html>

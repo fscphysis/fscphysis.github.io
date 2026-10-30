@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapere Aude</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Favicon-->
-    <link rel="icon" href="favicon.png" type="image/png">
+
+    <title>Abstract</title>
+
+    <!-- Antecipa o carregamento das fontes usadas no layout -->
+    <link
+        rel="preload"
+        href="./fontes/libre-baskerville-v24-latin-regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    >
+
+    <link
+        rel="preload"
+        href="./fontes/libre-baskerville-v24-latin-700.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    >
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.png" type="image/png">
 </head>
 <body>
     <div class="container">
@@ -16,9 +32,9 @@
         <header class="header">
             <nav class="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Abstract</a></li>
+                    <li class="nav-item"><a href="index.html"        class="nav-link">Abstract</a></li>
                     <li class="nav-item"><a href="professional.html" class="nav-link">Profissional</a></li>
-                    <li class="nav-item"><a href="academic.html" class="nav-link">Acadêmico</a></li>
+                    <li class="nav-item"><a href="academic.html"     class="nav-link">Acadêmico</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,35 +43,45 @@
         <main class="main-content">
             <!-- Seção Abstract -->
             <section class="section">
-                <h1>Abstract</h1>
+                <h1>Felipe SC</h1>
                 
                 <div>
-                    <p>Físico teórico, dedico-me ao estudo da teoria quântica de campos e da matemática em geral, com interesse especial em filosofia da matemática e em teoria de categorias.</p>
-                    <p>Profissionalmente, atuo na gestão de processos e no desenvolvimento técnico de infraestruturas de dados. Compreendo que a estruturação coerente do conhecimento, assim como a análise de sistemas organizacionais e sociais, são fundamentais para a tomada de decisão em ambientes de alta complexidade.</p>
-                    <p>Meus interesses intelectuais estendem-se aos fundamentos da filosofia, notadamente às questões da ontologia e da epistemologia, o que conduz a um interesse natural pelo direito e pela economia em sua dimensão praxeológica — particularmente em suas fundações lógicas.</p>
+                    <p>
+                        Físico teórico, dedico-me ao estudo da teoria quântica de campos e da matemática em geral, com interesse especial em filosofia da matemática e em teoria de categorias.
+                    </p>
+
+                    <p>
+                        Atuo na interseção entre processos, dados e finanças: estruturo fluxos de trabalho, desenho modelos de dados e contribuo para a organização financeira — do plano de contas à visão gerencial e à auditoria.
+
+                        Hoje, estruturo processos e organizo informações para que áreas como finanças, operações e tecnologia trabalhem com regras claras, dados confiáveis e decisões fundamentadas.
+                    </p>
+
+                    <p>
+                        Meus interesses intelectuais estendem-se aos fundamentos da filosofia, notadamente às questões da ontologia e da epistemologia, o que conduz a um interesse natural pelo direito e pela economia em sua dimensão praxeológica — particularmente em suas fundações lógicas.
+                    </p>
                     
                     <h2>Formação Acadêmica</h2>
                     
                     <div>
                         <h3>Mestrado em Física</h3>
-                         <strong>Universidade de São Paulo (USP), 2024.</strong> 
+                         <b>Universidade de São Paulo (USP), 2024.</b> 
                         <p>Cálculo de covariância de mapas cosmológicos na pipeline de dados do telescópio BINGO</p>
 
                         <h3>Bacharel em Física</h3>
-                        <strong>Universidade Federal do Paraná (UFPR), 2019.</strong>
+                        <b>Universidade Federal do Paraná (UFPR), 2019.</b>
                         <p>Quantização canônica do campo escalar complexo de Klein-Gordon</p>
                     </div>
 
                     <div>
                         <h2>Contato</h2>
-                        <p><strong>Email:</strong> felipesc.physis@gmail.com</p>
+                        <p><b>Email:</b> felipesc.physis@gmail.com</p>
                     </div>
                 </div>
             </section>
         
         <!-- Rodapé -->
         <footer class="page-footer">
-            <p class="footer-text">2021 Lotus Branca</p>
+            <p class="footer-text">Sapere Aude</p>
         </footer>
     </div>
 </body>
